@@ -178,3 +178,22 @@ are in the file named "LICENSE.apache20" in this directory.
 
 [dependabot]:https://dependabot.com
 [dependabot img]:https://api.dependabot.com/badges/status?host=github&repo=checkstyle/checkstyle
+
+
+### 定制 Check Style
+
+因使用习惯问题对 java code style 进行了部分定制，所以需要同步配套定制 checkstyle。
+
+定制的内容如下:
+
+|定制项|原始取值|定制之后|定制时间|备注|
+|:----|:----|:----|:----|:----|
+|`Indentation`.`basicOffset`| 2 | 4 |20200203|行缩进|
+|`Indentation`.`caseIndent`| 2 | 4 |20200203|行缩进|
+|`Indentation`.`throwsIndent`| 4 | 8 |20200203|行缩进|
+|`Indentation`.`lineWrappingIndentation`| 4 | 8 |20200203|行缩进|
+|`Indentation`.`arrayInitIndent`| 2 | 4 |20200203|行缩进|
+|`VariableDeclarationUsageDistance`.`allowedDistance`| 3 | 10 |20200203|变量的声明和使用的允许间隔行数|
+|`LineLength`.`max`| 100 | 120 |20200203|单行长度校验|
+
+check style具体规则请参考: [Google's Java Style Checkstyle Coverage](http://checkstyle.sourceforge.net/google_style.html)
